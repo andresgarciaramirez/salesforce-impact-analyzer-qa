@@ -34,12 +34,12 @@ Measured on a real org with one known reference per type:
 
 | Reference | Dependency API | Source scan |
 |---|---|---|
-| Validation rule, formula field on another object, Apex (static SOQL), trigger, layout, field set, email template, LWC | ✅ | ✅ |
-| Flow (record-triggered and Get Records) | ✅ Tooling route only | ✅ |
-| Report column | ✅ Bulk route only (not available in every org) | ✅ |
-| **Workflow rule** / **workflow field update** | ❌ | ✅ |
-| **List view**, **record type**, **compact layout** | ❌ | ✅ |
-| **Dynamic SOQL** in an Apex string | ❌ | ✅ (marked *probable*) |
+| Validation rule, formula field on another object, Apex (static SOQL), trigger, Visualforce, layout, field set, email template, LWC | ✅ | ✅ |
+| Flow (record-triggered and Get Records), custom button/link | ✅ Tooling route only | ✅ |
+| Report column, custom report type | ✅ Bulk route only (not available in every org) | ✅ |
+| **Workflow rule** / **field update** / **email alert** | ❌ | ✅ |
+| **List view**, **record type**, **compact layout**, **quick action layout** | ❌ | ✅ |
+| **Dynamic SOQL** in an Apex string, fields listed in an **Aura** component | ❌ | ✅ (marked *probable*) |
 | **Standard fields** (e.g. `Account.Industry`) | ❌ (can't be asked) | ✅ |
 
 ![Field referenced only from dynamic Apex: found by the scan](media/screenshots/report-field-en.png)
